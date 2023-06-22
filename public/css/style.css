@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    
+    /* background: linear-gradient(to right, #FFA384, #74BDCB); */
+}
+
+/* HEADER */
+
+/* nav */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav a {
+    padding: 20px;
+}
+
+
+/* MAIN */
+
+/* commun à toutes les pages */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+input,textarea,button {
+    background-color: rgba(91, 66, 127, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    border-image:linear-gradient(to bottom,  red,  rgba(157, 138, 138, 0));
+    
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url(../../public/images/starwars-5355787_1280.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+}
+
+main {
+    min-height: 100vh;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.card-unique {
+    flex: 0;
+}
+
+.card figure {
+    width: 100%;
+    overflow: hidden; /*pour cache le image si ca depase */
+}
+
+.trash-parent h3 {
+    margin-bottom: 0;
+}
+
+.trash-parent a {
+    margin-bottom: 20px;
+}
+
+.fa-trash-can {
+    display: none;
+    margin-left: 15px;
+}
+
+.trash-parent:hover .fa-trash-can {
+    display: block;
+    color: rgb(255, 84, 84);
+}
+
+.top-right-corner {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* page detailFilm */
+
+.detail-film-card {
+    /* padding-top: 30px; */
+    width: 50%;
+}
+
+.detail-film-card > h3 {
+    padding: 15px 0 5px;
+}
+
+.figure_detailFilm{
+    padding-top: 50px;
+}
